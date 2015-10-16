@@ -6,10 +6,10 @@
   "scripts": {
     "benchmark": "babel-node --ignore *.json",
     "benchmark:all": "npm run benchmark -- ./*.js",
-    "install:sugarshin": "rm -rf node_modules/sugarshin && npm i sugarshin-sandbox/js-rockyroad && mv node_modules/js-rockyroad node_modules/sugarshin",
-    "install:k-takam": "rm -rf node_modules/k-takam && npm i k-takam/js-rockyroad && mv node_modules/js-rockyroad node_modules/k-takam",
-    "install:RyotaHirano": "rm -rf node_modules/RyotaHirano && npm i RyotaHirano/js-rockyroad && mv node_modules/js-rockyroad node_modules/RyotaHirano",
-    "install:all": "npm run install:sugarshin && npm run install:k-takam && npm run install:RyotaHirano",
+    "i:sugarshin": "rm -rf node_modules/sugarshin && npm i sugarshin-sandbox/js-rockyroad && mv node_modules/js-rockyroad node_modules/sugarshin",
+    "i:k-takam": "rm -rf node_modules/k-takam && npm i k-takam/js-rockyroad && mv node_modules/js-rockyroad node_modules/k-takam",
+    "i:RyotaHirano": "rm -rf node_modules/RyotaHirano && npm i RyotaHirano/js-rockyroad && mv node_modules/js-rockyroad node_modules/RyotaHirano",
+    "install:all": "npm run i:sugarshin && npm run i:k-takam && npm run i:RyotaHirano",
     "postinstall": "npm run install:all"
   },
   "author": "sugarshin",
