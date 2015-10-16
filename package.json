@@ -6,9 +6,9 @@
   "scripts": {
     "benchmark": "babel-node --ignore *.json",
     "benchmark:all": "npm run benchmark -- ./*.js",
-    "install:sugarshin": "npm i sugarshin-sandbox/js-rockyroad && mv node_modules/js-rockyroad node_modules/sugarshin",
-    "install:k-takam": "npm i k-takam/js-rockyroad && mv node_modules/js-rockyroad node_modules/k-takam",
-    "install:RyotaHirano": "npm i RyotaHirano/js-rockyroad && mv node_modules/js-rockyroad node_modules/RyotaHirano",
+    "install:sugarshin": "rm -rf node_modules/sugarshin && npm i sugarshin-sandbox/js-rockyroad && mv node_modules/js-rockyroad node_modules/sugarshin",
+    "install:k-takam": "rm -rf node_modules/k-takam && npm i k-takam/js-rockyroad && mv node_modules/js-rockyroad node_modules/k-takam",
+    "install:RyotaHirano": "rm -rf node_modules/RyotaHirano && npm i RyotaHirano/js-rockyroad && mv node_modules/js-rockyroad node_modules/RyotaHirano",
     "install:all": "npm run install:sugarshin && npm run install:k-takam && npm run install:RyotaHirano",
     "postinstall": "npm run install:all"
   },
